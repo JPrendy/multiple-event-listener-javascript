@@ -10,13 +10,13 @@ https://www.kirupa.com/html5/handling_events_for_many_elements.htm
 
 an example of the code from the link
 
-var theParent = document.querySelector("#theDude");
-theParent.addEventListener("click", doSomething, false);
+<p>var theParent = document.querySelector("#theDude");</p>
+<p>theParent.addEventListener("click", doSomething, false);</p>
  
-function doSomething(e) {
-    if (e.target !== e.currentTarget) {
-        var clickedItem = e.target.id;
-        alert("Hello " + clickedItem);
-    }
-    e.stopPropagation();
-}
+<p>function doSomething(e) {</p>
+<p>    if (e.target !== e.currentTarget) {</p>
+<p>        var clickedItem = e.target.id;</p>
+<p>        alert("Hello " + clickedItem);</p>
+<p>    }</p>
+<p>    e.stopPropagation();</p>
+<p>}</p>
