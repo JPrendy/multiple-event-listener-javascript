@@ -1,0 +1,48 @@
+<!-- The following is a good test of keeping track of the answers the person selected from a multiple of 4
+it also make use of one event listener to get the specific id for a button instead of having 4 event listeners
+per button reducing the code needed to do it and it is done in javascript without any jquery
+
+https://www.kirupa.com/html5/handling_events_for_many_elements.htm -->
+
+<!-- an example of the code from the link
+
+var theParent = document.querySelector("#theDude");
+theParent.addEventListener("click", doSomething, false);
+ 
+function doSomething(e) {
+    if (e.target !== e.currentTarget) {
+        var clickedItem = e.target.id;
+        alert("Hello " + clickedItem);
+    }
+    e.stopPropagation();
+} -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Button Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Need this for hamburger menu in mobile mode-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="header">
+    Test
+</div>
+<div class="container">
+    <button type="button" class="btn btn-primary test" id="test"> </button>
+    <button type="button" class="btn btn-primary" id="test2"> </button>
+    <button type="button" class="btn btn-primary" id="test3"> </button>
+    <button type="button" class="btn btn-primary" id="test4"> </button>
+</div>
+
+<div class="hey">
+        <button type="button" class="btn btn-primary" id="back"> Back</button>
+        <button type="button" class="btn btn-primary" id="next"> Next</button>
+</div>
+</body>
+</html>
