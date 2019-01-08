@@ -31,8 +31,6 @@ function backPage(){
 
 
 
-
-
 function addNumbers(page){
     if(page == 1){
     document.getElementById("test").innerHTML = array[0];
